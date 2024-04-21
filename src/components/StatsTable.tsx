@@ -30,7 +30,7 @@ export default function StatsTable() {
       <div className="gg overflow-auto py-4">
         <div className="flex gap-x-8 md:gap-x-24">
           <StatTable data={STATS_TABLE.slice(0, 5)} indexStart={1} />
-          <StatTable data={STATS_TABLE.slice(-5)} indexStart={6} />
+          <StatTable data={STATS_TABLE.slice(5,10)} indexStart={6} />
         </div>
       </div>
     </Container>

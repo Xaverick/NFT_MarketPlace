@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { STATS_TABLE } from '../../consts';
 import './Propertydisplay.css';
+import StatsTable from '../StatsTable';
 
 const Propertydisplay = () => {
   const { property } = useParams();
@@ -8,6 +9,7 @@ const Propertydisplay = () => {
   const singlenft = STATS_TABLE.find(item => item.id === property);
 
   return (
+    <div className='propertypage'>
     <div className='propertydisplaysection'>
       <div className="image">
         <img src={`/carousel/${singlenft?.image}`} alt="" />
@@ -26,6 +28,8 @@ const Propertydisplay = () => {
           </div>
         </div>
       </div>
+    </div>
+    <StatsTable/>
     </div>
   )
 }
