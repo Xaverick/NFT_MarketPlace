@@ -1,8 +1,9 @@
 import { STATS_TABLE } from '@/consts'
-import { HTMLAttributes, ReactNode } from 'react'
-import { twMerge } from 'tailwind-merge'
+// import { HTMLAttributes, ReactNode } from 'react'
+// import { twMerge } from 'tailwind-merge'
 import Button from './Button'
 import Container from './Container'
+import { useNavigate } from 'react-router-dom';
 
 export default function StatsTable() {
   return (
@@ -37,6 +38,7 @@ export default function StatsTable() {
 }
 
 function StatTable({ data, indexStart }: { data: typeof STATS_TABLE; indexStart: number }) {
+  const usenavigate = useNavigate();
   return (
     <table className="w-full flex-1 whitespace-nowrap">
       <thead>
@@ -51,7 +53,7 @@ function StatTable({ data, indexStart }: { data: typeof STATS_TABLE; indexStart:
         {data.map((item, i) => (
           <tr className="cursor-pointer hover:bg-slate-100 [&>td]:px-4 [&>td]:py-3 first:[&>td]:pl-2" key={i + indexStart}>
             <td className="w-1">{i + indexStart}</td>
-            <td>
+            <td onClick={() => { usenavigate(`/${i + 1}`); }}>
               <div className="flex items-center gap-x-3 pr-6 md:gap-x-6">
                 <div className="relative aspect-square w-14 overflow-hidden rounded-xl border lg:w-[4.25rem]">
                   <img src={`/carousel/${item.image}`} className="absolute inset-0 h-full w-full object-cover object-center" />
@@ -73,16 +75,16 @@ function StatTable({ data, indexStart }: { data: typeof STATS_TABLE; indexStart:
   )
 }
 
-function DurationButton({
-  children,
-  className,
-}: {
-  children: ReactNode
-  className?: HTMLAttributes<HTMLButtonElement>['className']
-}) {
-  return (
-    <button className={twMerge('h-fit border-y px-3 py-2 text-sm font-semibold lg:px-4 lg:py-3 lg:text-base', className)}>
-      {children}
-    </button>
-  )
-}
+// function DurationButton({
+//   children,
+//   className,
+// }: {
+//   children: ReactNode
+//   className?: HTMLAttributes<HTMLButtonElement>['className']
+// }) {
+//   return (
+//     <button className={twMerge('h-fit border-y px-3 py-2 text-sm font-semibold lg:px-4 lg:py-3 lg:text-base', className)}>
+//       {children}
+//     </button>
+//   )
+// }

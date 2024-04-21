@@ -1,29 +1,29 @@
 export const MAIN_TABS = ['All', 'Lands', "Apartments", 'Collections']
 
 export const CAROUSEL_ITEMS = [
-  { image: '8.png', name: 'Collection Name', floor: '0.03ETH' },
-  { image: '1.png', name: 'Collection Name', floor: '0.03ETH' },
-  { image: '2.png', name: 'Collection Name', floor: '0.03ETH' },
-  { image: '3.png', name: 'Collection Name', floor: '0.03ETH' },
-  { image: '5.png', name: 'Collection Name', floor: '0.03ETH' },
-  { image: '6.png', name: 'Collection Name', floor: '0.03ETH' },
-  { image: '7.png', name: 'Collection Name', floor: '0.03ETH' },
-  { image: '9.png', name: 'Collection Name', floor: '0.03ETH' },
-  { image: '4.png', name: 'Collection Name', floor: '0.03ETH' },
-  { image: '10.jpg', name: 'Collection Name', floor: '0.03ETH' },
-  { image: '11.png', name: 'Collection Name', floor: '0.03ETH' },
-  { image: '12.jpg', name: 'Collection Name', floor: '0.03ETH' },
+  { id:'1',image: '8.png', name: 'Collection Name', floor: '0.03ETH' },
+  { id:"2",image: '1.png', name: 'Collection Name', floor: '0.03ETH' },
+  { id:'3',image: '2.png', name: 'Collection Name', floor: '0.03ETH' },
+  { id:'4',image: '3.png', name: 'Collection Name', floor: '0.03ETH' },
+  { id:'5',image: '5.png', name: 'Collection Name', floor: '0.03ETH' },
+  { id:'6',image: '6.png', name: 'Collection Name', floor: '0.03ETH' },
+  { id:'7',image: '7.png', name: 'Collection Name', floor: '0.03ETH' },
+  { id:'8',image: '9.png', name: 'Collection Name', floor: '0.03ETH' },
+  { id:'9',image: '4.png', name: 'Collection Name', floor: '0.03ETH' },
+  { id:'10',image: '10.jpg', name: 'Collection Name', floor: '0.03ETH' },
+  { id:'11',image: '11.png', name: 'Collection Name', floor: '0.03ETH' },
+  { id:'12',image: '12.jpg', name: 'Collection Name', floor: '0.03ETH' },
 ]
 
 export const STATS_TABLE = [
-  { image: '1.png', name: 'Collection Name', floor: 0.03, volume: 25 },
-  { image: '2.png', name: 'Collection Name', floor: 0.03, volume: 25 },
-  { image: '5.png', name: 'Collection Name', floor: 0.03, volume: 25 },
-  // { image: '6.png', name: 'Collection Name', floor: 0.03, volume: 25 },
-  // { image: '7.png', name: 'Collection Name', floor: 0.03, volume: 25 },
-  // { image: '8.png', name: 'Collection Name', floor: 0.03, volume: 25 },
-  // { image: '9.png', name: 'Collection Name', floor: 0.03, volume: 25 },
-  // { image: '10.jpg', name: 'Collection Name', floor: 0.03, volume: 25 },
+  {id:'1', image: '1.png', name: 'Collection Name', floor: 0.03, volume: 26 },
+  {id:'2', image: '2.png', name: 'Collection Name', floor: 0.03, volume: 27 },
+  {id:'3', image: '5.png', name: 'Collection Name', floor: 0.03, volume: 28 },
+  {id:'4', image: '6.png', name: 'Collection Name', floor: 0.03, volume: 29 },
+  {id:'5', image: '7.png', name: 'Collection Name', floor: 0.03, volume: 30  },
+  {id:'6', image: '8.png', name: 'Collection Name', floor: 0.03, volume: 31 },
+  {id:'7', image: '9.png', name: 'Collection Name', floor: 0.03, volume: 32 },
+  {id:'8', image: '10.jpg', name: 'Collection Name', floor: 0.03, volume: 33 },
 ]
 
 export const FOOTER_MARKETPLACE = ['All NFTs', 'Art', 'Gaming', 'Memberships', 'PFPs', 'Photography']
